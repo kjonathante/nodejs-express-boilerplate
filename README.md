@@ -1,4 +1,4 @@
-# nodejs-express-boilerplate
+# nodejs-express-boilerplate [![Codeship Status for kjonathante/nodejs-express-boilerplate](https://app.codeship.com/projects/14de5090-a9ec-0137-48eb-12402f6f79c5/status?branch=master)](https://app.codeship.com/projects/361581)
 Boilerplate for creating an app in nodejs+express with test, configuration and logging infrastructure.
 
 ## Table of Contents
@@ -7,6 +7,7 @@ Boilerplate for creating an app in nodejs+express with test, configuration and l
   - [Prettier Setup](#prettier-setup)
   - [ESLint Setup](#eslint-setup)
   - [Test Infrastructure](#test-infrastructure)
+  - [Configuration Infrastructure](#configuration-infrastructure)
 
 ## Setup
 ## Visual Studio Code Setup
@@ -77,5 +78,17 @@ npm install --save-dev jest supertest
 module.exports = {
   coverageDirectory: 'coverage',
   testEnvironment: 'node'
+}
+```
+## Configuration Infrastructure
+```
+npm install dotenv
+```
+```javascript
+// config/index.js
+require('dotenv').config()
+
+module.exports = {
+  secretKey: process.env.SECRET_KEY
 }
 ```
