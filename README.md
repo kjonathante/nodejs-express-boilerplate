@@ -1,4 +1,4 @@
-# nodejs-express-boilerplate
+# nodejs-express-boilerplate [![Codeship Status for kjonathante/nodejs-express-boilerplate](https://app.codeship.com/projects/14de5090-a9ec-0137-48eb-12402f6f79c5/status?branch=master)](https://app.codeship.com/projects/361581)
 Boilerplate for creating an app in nodejs+express with test, configuration and logging infrastructure.
 
 ## Table of Contents
