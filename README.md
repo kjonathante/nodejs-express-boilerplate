@@ -6,6 +6,7 @@ Boilerplate for creating an app in nodejs+express with test, configuration and l
   - [Visual Studio Code Setup](#visual-studio-code-setup)
   - [Prettier Setup](#prettier-setup)
   - [ESLint Setup](#eslint-setup)
+  - [Test Infrastructure](#test-infrastructure)
 
 ## Setup
 ## Visual Studio Code Setup
@@ -36,7 +37,7 @@ module.exports = {
   semi: false
 }
 ```
-### ESLint Setup
+## ESLint Setup
 ```
 npm install eslint --save-dev
 ./node_modules/.bin/eslint --init
@@ -47,7 +48,8 @@ module.exports = {
   env: {
     commonjs: true,
     es6: true,
-    node: true
+    node: true,
+    jest: true
   },
   extends: 'eslint:recommended',
   globals: {
@@ -63,5 +65,17 @@ module.exports = {
     quotes: ['error', 'single'],
     semi: ['error', 'never']
   }
+}
+```
+## Test Infrastructure
+```
+npm install --save-dev jest supertest
+./node_modules/.bin/jest --init
+```
+```javascript
+// jest.config.js
+module.exports = {
+  coverageDirectory: 'coverage',
+  testEnvironment: 'node'
 }
 ```
