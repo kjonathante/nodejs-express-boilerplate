@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-express-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for creating an app in nodejs+express with test, configuration and logging infrastructure.",
+  "main": ".prettierrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjonathante/nodejs-express-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kjonathante/nodejs-express-boilerplate/issues"
+  },
+  "homepage": "https://github.com/kjonathante/nodejs-express-boilerplate#readme",
+  "devDependencies": {
+    "eslint": "^6.2.2"
+  }
+}
