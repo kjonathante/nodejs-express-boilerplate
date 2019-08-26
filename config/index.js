@@ -8,7 +8,7 @@ const log = {
 }
 
 module.exports = {
-  secretKey: process.env.SECRET_KEY,
+  privateKey: process.env.PRIVATE_KEY,
   log: (env = process.env.NODE_ENV || 'development') => {
     return log[env]()
   }
