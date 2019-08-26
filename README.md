@@ -8,6 +8,7 @@ Boilerplate for creating an app in nodejs+express with test, configuration and l
   - [ESLint Setup](#eslint-setup)
   - [Test Infrastructure](#test-infrastructure)
   - [Configuration Infrastructure](#configuration-infrastructure)
+  - [Logging Infrastructure](#logging-infrastructure)
 
 ## Setup
 ## Visual Studio Code Setup
@@ -90,5 +91,25 @@ require('dotenv').config()
 
 module.exports = {
   secretKey: process.env.SECRET_KEY
+}
+```
+## Logging Infrastructure
+```
+npm install bunyan
+```
+```javascript
+// config/index.js
+const bunyan = require('bunyan')
+const appName = 'App-Name'
+const log = {
+  development: () => bunyan.createLogger({ name: appName, level: 'debug' }),
+  production: () => bunyan.createLogger({ name: appName, level: 'info' }),
+  test: () => bunyan.createLogger({ name: appName, level: 'fatal' })
+}
+
+module.exports = {
+  log: (env = process.env.NODE_ENV || 'development') => {
+    return log[env]()
+  }
 }
 ```
