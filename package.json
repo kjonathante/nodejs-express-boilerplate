@@ -4,6 +4,7 @@
   "description": "Boilerplate for creating an app in nodejs+express with test, configuration and logging infrastructure.",
   "main": ".prettierrc.js",
   "scripts": {
+    "start": "node bin/run",
     "test": "jest"
   },
   "repository": {
@@ -23,6 +24,7 @@
     "supertest": "^4.0.2"
   },
   "dependencies": {
+    "bunyan": "^1.8.12",
     "dotenv": "^8.1.0"
   }
 }
