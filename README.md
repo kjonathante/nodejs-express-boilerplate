@@ -22,6 +22,9 @@ Boilerplate for creating an app in nodejs+express with test, configuration and l
   "editor.formatOnSave": false,
   "[javascript]": {
     "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true
   }
 }
 ```
