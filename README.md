@@ -7,6 +7,7 @@ Boilerplate for creating an app in nodejs+express with test, configuration and l
   - [Prettier Setup](#prettier-setup)
   - [ESLint Setup](#eslint-setup)
   - [Test Infrastructure](#test-infrastructure)
+  - [Configuration Infrastructure](#configuration-infrastructure)
 
 ## Setup
 ## Visual Studio Code Setup
@@ -77,5 +78,17 @@ npm install --save-dev jest supertest
 module.exports = {
   coverageDirectory: 'coverage',
   testEnvironment: 'node'
+}
+```
+## Configuration Infrastructure
+```
+npm install dotenv
+```
+```javascript
+// config/index.js
+require('dotenv').config()
+
+module.exports = {
+  secretKey: process.env.SECRET_KEY
 }
 ```
