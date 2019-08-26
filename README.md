@@ -4,6 +4,7 @@ Boilerplate for creating an app in nodejs+express with test, configuration and l
 ## Table of Contents
 - [Setup](#setup)
   - [Visual Studio Code Setup](#visual-studio-code-setup)
+  - [Prettier Setup](#prettier-setup)
 
 ## Setup
 ## Visual Studio Code Setup
@@ -21,5 +22,13 @@ Boilerplate for creating an app in nodejs+express with test, configuration and l
   "[javascript]": {
     "editor.formatOnSave": true
   }
+}
+```
+## Prettier Setup
+```javascript
+// .prettierrc.js
+module.exports = {
+  singleQuote: true,
+  semi: false
 }
 ```
