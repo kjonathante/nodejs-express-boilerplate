@@ -2,11 +2,13 @@
 Boilerplate for creating an app in nodejs+express with test, configuration and logging infrastructure.
 
 ## Table of Contents
-- [Getting Started](#getting-started)
+- [Setup](#setup)
+  - [Visual Studio Code Setup](#visual-studio-code-setup)
 
-## Getting Started
-## VSCode Settings
+## Setup
+## Visual Studio Code Setup
 ```javascript
+// .vscode/settings.json
 {
   "eslint.validate": [
     {
